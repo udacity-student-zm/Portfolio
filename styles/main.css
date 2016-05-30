@@ -1,0 +1,125 @@
+body {
+  /*TODO: find correct font*/
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2d3c49;
+}
+
+.header {
+}
+
+hr.separator {
+  background-color: #7d97ad;
+  box-sizing: content-box;
+  height: 5px;
+  border: 0;
+  margin-bottom: 40px;
+}
+
+.header .title {
+  display: inline;
+  text-transform: uppercase;
+  padding: 0 10px;
+  text-align: right;
+}
+
+.header .title h1 {
+  font-weight: 100;
+  font-size: 3em;
+  margin: 10px 0;
+}
+
+.header .title h4 {
+  margin: 10px 0;
+}
+
+.header .logo {
+  display: inline;
+  line-height: 120px;
+  padding: 0 10px;
+}
+
+.header .logo img {
+  vertical-align: middle;
+}
+
+.header .title {
+  float: right;
+}
+
+.container {
+  max-width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project {
+  padding-bottom: 40px;
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+}
+
+.project a {
+  text-decoration: none;
+  color: black;
+}
+
+.project__intro .title {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.project__intro .url {
+  font-weight: 300;
+}
+
+.project__intro .url a {
+  text-decoration: none;
+  color: black;
+}
+
+.project:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width:960px) {
+  .featured-work__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .project {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .header .title {
+    display: block;
+    text-align: left;
+    float: none;
+  }
+
+  .header .logo {
+    display: block;
+  }
+}
+
+.featured-work__title {
+  color: #7d97ad;
+  padding: 0 10px;
+}
